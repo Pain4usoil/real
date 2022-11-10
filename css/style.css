@@ -27,7 +27,7 @@ html {
 }
 
 body::before {
-	background-image: url('/img/bg.jpg');
+	background-image: url('./img/bg.jpg');
 	background-size: cover;
 	height: 100%;
 	position: absolute;
