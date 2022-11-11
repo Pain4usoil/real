@@ -124,7 +124,7 @@ body:before {
 .formsFail  {
     border-radius: 5px;
     border: 2px solid black;
-    outline: rgba(200, 3, 3, 0.692) solid 3px;
+    outline: rgba(200, 3, 3, 0.692) solid 2px;
  }
 
 

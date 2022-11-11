@@ -11,3 +11,7 @@ $(function(){
     });
 
 });
+
+(function (count = 1) {
+    console.log('Счётчик' + count)
+}, 1000);
