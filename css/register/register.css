@@ -108,21 +108,22 @@ body:before {
 }
 
 .login-forms button:hover {
-    outline: var(--light-blue) solid 3px;
+    outline: var(--light-blue) solid 2px;
 }
 
 .login-forms input:hover {
-    outline: var(--light-blue) solid 3px;
+    outline: var(--light-blue) solid 2px;
 }
 
 .login-forms input:focus {
-    outline: var(--light-blue) solid 3px;
+    outline: var(--light-blue) solid 2px;
 }
 
 /* FAIL */
 .formsFail  {
     border-radius: 5px;
-    outline: red solid 3px;
+    border: none;
+    outline: rgba(200, 3, 3, 0.692) solid 3px;
  }
 
 

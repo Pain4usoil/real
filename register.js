@@ -1,26 +1,28 @@
-let form = document.getElementById('login-forms');
+let form = document.getElementById('login-form');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    
 
-    let login = document.getElementById('login');
-    let password = document.getElementById('password');
+    let name = document.getElementById('name');
+    let password = document.getElementById('pass');
     let rePassword = document.getElementById('repassword');
     
-    if(login.value == "") {
-        login.classList.add('loginFormsFail')
+    if(name.value == "") {
+        name.classList.add('formsFail')
+        console.log('hello')
     } else {
-        login.classList.remove('loginFormsFail')
+        name.classList.remove('formsFail')
     }
 
     if (password.value == '') {
-        password.classList.add('loginFormsFail')
-        rePassword.classList.add('loginFormsFail')
+        password.classList.add('formsFail')
+        rePassword.classList.add('formsFail')
     } else if (password.value !== rePassword.value) {
-        password.classList.add('loginFormsFail')
-        rePassword.classList.add('loginFormsFail')
+        password.classList.add('formsFail')
+        rePassword.classList.add('formsFail')
     } else {
-        password.classList.remove('loginFormsFail')
-        rePassword.classList.remove('loginFormsFail')
+        password.classList.remove('formsFail')
+        rePassword.classList.remove('formsFail')
     }
 })
