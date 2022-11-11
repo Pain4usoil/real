@@ -34,6 +34,7 @@ body:before {
     text-align: center;
     border-radius: 15px;
     width: 450px;
+    height: 300px;
     background-color: var(--theme-bg);
     box-shadow: 0 0 5px 1.5px var(--light-pink);
     color: white;
@@ -119,10 +120,10 @@ body:before {
     outline: var(--light-blue) solid 2px;
 }
 
-/* FAIL */
+/* FORM-FAIL */
 .formsFail  {
     border-radius: 5px;
-    border: none;
+    border: 2px solid black;
     outline: rgba(200, 3, 3, 0.692) solid 3px;
  }
 
