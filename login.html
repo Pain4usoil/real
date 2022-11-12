@@ -14,8 +14,8 @@
             <div class="header-content">
                 <nav class="header-navigation">
                     <ul class="header-list">
-                        <li class="header-list__item-active">
-                            <a href="index.html" class="header-list__link-active">
+                        <li class="header-list__item">
+                            <a href="index.html" class="header-list__link">
                                 Главная
                             </a>
                         </li>
@@ -34,8 +34,8 @@
                                 Профиль
                             </a>
                         </li>
-                        <li class="header-list__item">
-                            <a href="login.html" class="header-list__link">
+                        <li class="header-list__item-active">
+                            <a href="login.html" class="header-list__link-active">
                                 Войти
                             </a>
                         </li>
@@ -51,11 +51,12 @@
                 <form action="register">
                     <input type="email" name="login" id="login" placeholder="Введите логин">
                     <input type="password" name="password" id="password" placeholder="Введите пароль">
-                    <button type="submit" id="btn_register">Войти</button>
+                    <button type="submit" id="btn_register"><a href="profile.html">Войти</a></button>
                 </form>
             </div>
-            <a href="register.html">Уже есть аккаунт?</a>
+            <a href="register.html">Ещё нет аккаунта?</a>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

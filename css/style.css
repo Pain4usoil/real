@@ -206,7 +206,7 @@ footer p {
     margin-top: 5%;
     text-align: center;
     line-height: 25px;
-    box-shadow:0 0 3px 0.5px var(--theme-text);
+    box-shadow: 0 0 3px 0.5px var(--theme-text);
     user-select: none;
     margin-left: -17%;
     transition: .3s;

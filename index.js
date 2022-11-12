@@ -1,17 +1,15 @@
-$(function(){
+window.onscroll = function () {
+    headerLimp();
+  };
+  
+  let header = document.querySelector('.header');
+  let menuHeight = header.offsetTop;
+  
+  function headerLimp() {
+    if (window.pageYOffset > menuHeight) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  }
 
-    $("#typing").typed({
-        strings: [" Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur modi similique eligendi necessitatibus natus odio deserunt doloremque quidem minus aperiam!"],
-        typeSpeed: 70,
-        backDelay: 1500,
-        startDelay: 2500,
-        loop: true,
-        loopCount: 2,
-        contentType: 'html',      
-    });
-
-});
-
-(function (count = 1) {
-    console.log('Счётчик' + count)
-}, 1000);
