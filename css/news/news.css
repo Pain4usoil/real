@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 body:before {
 	content: ' ';
 	position: absolute;
-    background-image: url('/img/bg.jpg');
+    background-image: url('../../img/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
 	height: 130%;
