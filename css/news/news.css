@@ -218,5 +218,107 @@ footer {
     top: 0;
     left: 0;
     background-color: #0000008c;
-    transition: background 1s ease;
+    transition: 1s ease;
+}
+
+/* ADD-NEWS */
+
+.add-news-button {
+    position: absolute;
+    color: white;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.add-news-button > button {
+    border-radius: 13px;
+    background-color: var(--theme-bg);
+    color: var(--light-pink);
+    border: 2px solid var(--light-gray-bg);
+    padding: 5px 10px;
+}
+
+.add-news-form{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.add-news-button button:focus-within {
+    border: 2px solid var(--light-pink);
+}
+
+.add-news-button:focus-within .add-news-form {
+    visibility: visible;
+}
+
+.add-news-form input{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: var(--theme-bg);
+    border: none;
+    padding: 3px;
+    border: 2px solid var(--light-gray-bg);
+    outline: none;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.add-news-form textarea {
+    background-color: var(--theme-bg);
+    resize: none;
+    border: none;
+    padding: 3px;
+    border: 2px solid var(--light-gray-bg);
+    outline: none;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+#add-news-attach-file_button {
+    background-color: var(--theme-bg);
+    border: 2px solid var(--light-gray-bg);
+    color: #757566;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: 3px 0;
+}
+
+#add-news_button {
+    background-color: var(--theme-bg);
+    border: 2px solid var(--light-gray-bg);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #757566;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: 3px 0;
+}
+
+/* ANIMATION */
+
+.add-news-form input:hover{
+    border: 2px solid var(--light-pink);
+}
+
+.add-news-form textarea:hover {
+    border: 2px solid var(--light-pink);
+}
+
+#add-news-attach-file_button:hover {
+    border: 2px solid var(--light-pink);
+}
+
+#add-news_button:hover {
+    border: 2px solid var(--light-pink);
+}
+
+.add-news-form input:focus-within{
+    border: 2px solid var(--light-pink);
+}
+
+.add-news-form textarea:focus-within {
+    border: 2px solid var(--light-pink);
 }
